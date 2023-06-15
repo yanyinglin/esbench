@@ -1,0 +1,1 @@
+kubectl get pods -n openfaas-fn| grep Evicted | awk '{print $1}' | xargs kubectl delete pod -n openfaas-fn

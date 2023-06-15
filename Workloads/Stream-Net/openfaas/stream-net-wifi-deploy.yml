@@ -1,0 +1,21 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://serverless.siat.ac.cn:31112
+functions:
+  stream-net-wifi:
+    lang: python3
+    handler: ./stream
+    image: k.harbor.siat.ac.cn/openfaas/openfaas-arm64-stream-net:1.2
+    skip_build: true
+    requests:
+      cpu: 200m
+    limits:
+      memory: 512Mi
+      cpu: 2000m
+    annotations:
+      com.openfaas.profile: withwifi
+    environment:
+      read_timeout: "10s"
+      write_timeout: "10s"
+      exec_timeout: "10s"

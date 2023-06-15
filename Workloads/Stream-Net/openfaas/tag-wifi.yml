@@ -1,0 +1,19 @@
+kind: Profile
+apiVersion: openfaas.com/v1
+metadata:
+  name: withwifi
+  namespace: openfaas
+spec:
+    tolerations:
+    - key: "wifi"
+      operator: "Exists"
+      effect: "NoSchedule"
+    affinity:
+      nodeAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+          nodeSelectorTerms:
+          - matchExpressions:
+            - key: wifi
+              operator: In
+              values:
+              - wifi

@@ -1,0 +1,1 @@
+docker buildx build --platform linux/arm64 . -t dockertinker/openfaas-dl-base:3.0 --push --add-host k.harbor.siat.ac.cn:172.16.101.5

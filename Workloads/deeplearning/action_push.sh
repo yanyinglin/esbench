@@ -1,0 +1,1 @@
+faas-cli push -f openfass-deep-learning.yml

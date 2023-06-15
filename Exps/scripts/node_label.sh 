@@ -1,0 +1,2 @@
+kubectl label nodes euler-37 euler-41 wired=wired
+kubectl taint nodes euler-37 euler-41 wired:NoSchedule

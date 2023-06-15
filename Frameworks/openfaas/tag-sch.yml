@@ -1,0 +1,19 @@
+kind: Profile
+apiVersion: openfaas.com/v1
+metadata:
+  name: withwired
+  namespace: openfaas
+spec:
+    tolerations:
+    - key: "wired"
+      operator: "Exists"
+      effect: "NoSchedule"
+    affinity:
+      nodeAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+          nodeSelectorTerms:
+          - matchExpressions:
+            - key: wired
+              operator: In
+              values:
+              - wired

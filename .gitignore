@@ -1,0 +1,17 @@
+**.idea/
+**.DS_Store
+**/virtualenv
+# template
+build
+**/**.mp4
+# **.csv
+DIC/envs/Runtimes/ml-inference-with-data-RT/models
+DIC/envs/Runtimes/ml-inference-with-data-RT/testData
+DIC/envs/ML_model_training/reuters
+# DIC/MachineLearning/*/*/model
+DIC/MachineLearning/*/*/data
+/DIC/envs/Bigdata/stream_data/
+**/*train.txt
+**/python3-dl-base
+**/**.pkl
+**/**.pt

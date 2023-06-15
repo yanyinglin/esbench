@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://serverless.siat.ac.cn:31112
+functions:
+  stream-net:
+    lang: python3-debian
+    handler: ./stream
+    image: dockertinker/openfaas-arm64-stream-net:1.3
+   
