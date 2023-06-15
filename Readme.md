@@ -35,6 +35,7 @@ Sure, let's break down each section:
 
 2. **Experiment Scripts**
     - This section would likely provide scripts that run a series of workloads or experiments on the deployed clusters, possibly testing the performance, scaling characteristics, and reliability of serverless functions on different hardware and configurations.
+    ![](Exps/Results/plots/metrics.png)
     
 3. **Data Analysis**
     - After running the experiments, this section would likely provide scripts to parse the results, maybe using a language like Python with data analysis libraries like pandas, numpy, and matplotlib. These scripts would help analyze the data collected from the experiments, generate figures, compute statistics, etc.
