@@ -29,3 +29,16 @@ Feel free to explore the repository and use the benchmark to assess the inferenc
     
 3. **Data Analysis**
     - After running the experiments, this section would likely provide scripts to parse the results, maybe using a language like Python with data analysis libraries like pandas, numpy, and matplotlib. These scripts would help analyze the data collected from the experiments, generate figures, compute statistics, etc.
+
+--- 
+~~~
+@INPROCEEDINGS{10074730,
+  author={Lin, Yanying and Chen, Junhong and Wang, Yang and Ye, Kejiang},
+  booktitle={2022 IEEE 24th Int Conf on High Performance Computing & Communications (HPCC)}, 
+  title={ESBench: Understanding Deep Learning Inference Overheads for Edge Serverless}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={267-274},
+  doi={10.1109/HPCC-DSS-SmartCity-DependSys57074.2022.00067}}
+~~~
